@@ -1,0 +1,70 @@
+:root {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+    min-width: 100%;
+    background: linear-gradient(270deg, #464091 0%, #312A76 36.39%, #221A54 64.06%, #141037 100%);
+    background-image: url("./bg2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: hidden;
+    box-sizing: border-box;
+    opacity: 1;
+}
+
+.hero-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    min-width: 100%;
+    background-image: url("./UnionV.svg");
+    background-size: 5rem;
+}
+
+.has-text-centered {
+    text-align: center;
+}
+
+.login-logo {
+    height: auto;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.login-with-google {
+    background-color: #5b4999;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 0 10px;
+    color: #fff;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    box-shadow: 0 1px 2px #b5b5b5;
+    width: 220px;
+    height: 35px;
+    display: inline-block;
+}
+
+
+/* Media queries para hacerlo responsive */
+@media (max-width: 768px) {
+    .hero-body {
+        background-size: 2rem;
+    }
+
+    .login-logo {
+        margin-bottom: 10px;
+    }
+
+    .login-with-google {
+        width: 180px;
+        height: 30px;
+        font-size: 14px;
+    }
+}
